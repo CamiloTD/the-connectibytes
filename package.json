@@ -6,7 +6,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./dist/main.js"
+    "start": "npm run build && electron ./dist/main.js",
+    "dev": "electron ./dist/main.js"
   },
   "repository": "https://github.com/electron/electron-quick-start-typescript",
   "keywords": [
@@ -23,5 +24,12 @@
     "electron": "^6.0.8",
     "tslint": "^5.19.0",
     "typescript": "^3.6.0"
+  },
+  "dependencies": {
+    "@types/chartist": "^0.9.47",
+    "@types/matter-js": "^0.10.9",
+    "chartist": "^0.11.4",
+    "electron-reload": "^1.5.0",
+    "matter-js": "^0.14.2"
   }
 }
